@@ -11,6 +11,7 @@ namespace TravelOffice
 		private string name;
 		private Address address;
 		private Trip trip;
+
 		public Customer(string name )
 		{
 			this.name = name;
@@ -29,6 +30,16 @@ namespace TravelOffice
 		{
 
 			return "Imie i nazwisko " + name + "\n Adres " + address.getInfo() + "/n wycieczka " + trip.GetInfo(); 
+		}
+		public string CustomerName()
+
+		{
+			return name;	
+
+		}
+		public override string ToString()
+		{
+			return name;
 		}
 	}
 }
